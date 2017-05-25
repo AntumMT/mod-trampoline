@@ -6,7 +6,7 @@ local modname = "trampoline"
 minetest.log("action", "[MOD] Loading '" .. modname .. "' ...")
 
 
-logMessage = function(message)
+trampoline.log = function(message)
 	minetest.log("action", "[" .. modname .. "] " .. message)
 end
 
@@ -132,7 +132,7 @@ if minetest.get_modpath("coloredwood") ~= nil then
 		
 		trampoline.addColoredTrampCraft(tramp_colors[i])
 		
-		logMessage("Registered '" .. tramp_colors[i]:gsub("^%l", string.upper) .. " trampoline'")
+		trampoline.log("Registered '" .. tramp_colors[i]:gsub("^%l", string.upper) .. " trampoline'")
 	end
 end
 
