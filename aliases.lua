@@ -2,17 +2,19 @@
 
 
 local aliases = {
+	'trampoline:trampoline',
 	'trampoline:tramp',
 	'trampoline',
-	'tramp'
+	'tramp',
 }
 
 for I in pairs(aliases) do
-	minetest.register_alias(aliases[I], 'trampoline:trampoline')
+	minetest.register_alias(aliases[I], 'trampoline:regular')
 end
 
 
 local aliases_brown = {
+	'trampoline:trampoline_brown',
 	'trampoline:tramp_brown',
 	'trampoline_brown',
 	'tramp_brown',
@@ -21,5 +23,5 @@ local aliases_brown = {
 }
 
 for I in pairs(aliases_brown) do
-	minetest.register_alias(aliases_brown[I], 'trampoline:trampoline_brown')
+	minetest.register_alias(aliases_brown[I], 'trampoline:brown')
 end

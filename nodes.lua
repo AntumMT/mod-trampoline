@@ -2,7 +2,7 @@
 
 
 -- Regular trampoline
-minetest.register_node("trampoline:trampoline", {
+minetest.register_node("trampoline:regular", {
 	description = "Trampoline",
 	drawtype = "nodebox",
 	node_box = trampoline.box,
@@ -18,7 +18,7 @@ minetest.register_node("trampoline:trampoline", {
 
 
 -- Brown trampoline
-minetest.register_node("trampoline:trampoline_brown", {
+minetest.register_node("trampoline:brown", {
 	description = "Brown Trampoline",
 	drawtype = "nodebox",
 	node_box = trampoline.box,

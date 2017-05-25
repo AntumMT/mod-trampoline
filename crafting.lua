@@ -3,7 +3,7 @@
 
 -- Regular trampoline
 minetest.register_craft({
-	output = "trampoline:trampoline",
+	output = "trampoline:regular",
 	recipe = {
 		{"technic:rubber", "technic:rubber", "technic:rubber"},
 		{"default:wood", "default:wood", "default:wood"},
@@ -14,7 +14,7 @@ minetest.register_craft({
 
 -- Brown trampoline
 minetest.register_craft({
-	output = "trampoline:trampoline_brown",
+	output = "trampoline:brown",
 	recipe = {
 		{"technic:rubber", "technic:rubber", "technic:rubber"},
 		{"default:junglewood", "default:junglewood", "default:junglewood"},
