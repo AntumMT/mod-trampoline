@@ -27,7 +27,7 @@ trampoline.box = {
 local default_bounce = 20
 
 -- Define function to add a colored trampoline
-addColoredTrampNode = function(color, bounce)
+trampoline.addColoredTrampNode = function(color, bounce)
 	local bounce = default_bounce * bounce
 	
 	minetest.register_node("trampoline:trampoline_" .. color, {
@@ -48,7 +48,7 @@ addColoredTrampNode = function(color, bounce)
 end
 
 -- Define function to add a colored trampoline craft recipe
-addColoredTrampCraft = function(color)
+trampoline.addColoredTrampCraft = function(color)
 	minetest.register_craft({
 		output = "trampoline:trampoline_" .. color,
 		recipe = {
@@ -128,9 +128,9 @@ if minetest.get_modpath("coloredwood") ~= nil then
 	
 	-- Add all available trampoline colors
 	for i = 1, color_count do
-		addColoredTrampNode(tramp_colors[i], i+1)
+		trampoline.addColoredTrampNode(tramp_colors[i], i+1)
 		
-		addColoredTrampCraft(tramp_colors[i])
+		trampoline.addColoredTrampCraft(tramp_colors[i])
 		
 		logMessage("Registered '" .. tramp_colors[i]:gsub("^%l", string.upper) .. " trampoline'")
 	end
