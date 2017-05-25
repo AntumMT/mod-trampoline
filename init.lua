@@ -24,22 +24,12 @@ local scripts = {
 	'functions',
 	'nodes',
 	'crafting',
+	'aliases',
 }
 
 for I in pairs(scripts) do
 	dofile(trampoline.modpath .. '/' .. scripts[I] .. '.lua')
 end
-
-
-minetest.register_alias("trampoline", "trampoline:trampoline")
-
-
--- *** Colored Trampolines ***
-
--- BROWN TRAMP
-
-minetest.register_alias("brown_trampoline", "trampoline:trampoline_brown")
-
 
 -- Register other colored trampolines
 if minetest.global_exists('coloredwood') then
