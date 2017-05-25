@@ -1,13 +1,13 @@
 
 trampoline = {}
+trampoline.modname = minetest.get_current_modname()
 
-local modname = "trampoline"
 
-minetest.log("action", "[MOD] Loading '" .. modname .. "' ...")
+minetest.log("action", "[MOD] Loading '" .. trampoline.modname .. "' ...")
 
 
 trampoline.log = function(message)
-	minetest.log("action", "[" .. modname .. "] " .. message)
+	minetest.log("action", "[" .. trampoline.modname .. "] " .. message)
 end
 
 
@@ -137,4 +137,4 @@ if minetest.get_modpath("coloredwood") ~= nil then
 end
 
 
-minetest.log("action", "[MOD] '" .. modname .. "' loaded")
+minetest.log("action", "[MOD] '" .. trampoline.modname .. "' loaded")
