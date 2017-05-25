@@ -1,5 +1,25 @@
 -- Aliases for trampoline mod
 
 
-minetest.register_alias("trampoline", "trampoline:trampoline")
-minetest.register_alias("brown_trampoline", "trampoline:trampoline_brown")
+local aliases = {
+	'trampoline:tramp',
+	'trampoline',
+	'tramp'
+}
+
+for I in pairs(aliases) do
+	minetest.register_alias(aliases[I], 'trampoline:trampoline')
+end
+
+
+local aliases_brown = {
+	'trampoline:tramp_brown',
+	'trampoline_brown',
+	'tramp_brown',
+	'brown_trampoline',
+	'brown_tramp',
+}
+
+for I in pairs(aliases_brown) do
+	minetest.register_alias(aliases_brown[I], 'trampoline:trampoline_brown')
+end
