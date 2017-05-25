@@ -28,7 +28,18 @@ trampoline.addColoredTrampNode = function(color, bounce)
 		groups = {dig_immediate=2, bouncy=bounce, fall_damage_add_percent=-70},
 	})
 	
-	minetest.register_alias(color .. '_trampoline', 'trampoline:' .. color)
+	local aliases = {
+		'trampoline:trampoline_' .. color,
+		'trampoline:tramp_' .. color,
+		'trampoline_' .. color,
+		'tramp_' .. color,
+		color .. '_trampoline',
+		color .. '_tramp',
+	}
+	
+	for I in pairs(aliases) do
+		minetest.register_alias(aliases[I], 'trampoline:' .. color)
+	end
 end
 
 
