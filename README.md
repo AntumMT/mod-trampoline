@@ -22,7 +22,7 @@ License: [GPLv3](LICENSE.txt)
 Craft recipe:
 
     ╔════╦════╦════╗
-    ║ DL ║ DL ║ DL ║
+    ║ TR ║ TR ║ TR ║
     ╠════╬════╬════╣
     ║ DW ║ DW ║ DW ║
     ╠════╬════╬════╣
@@ -33,7 +33,7 @@ Craft recipe:
 Craft recipe brown trampoline:
 
     ╔════╦════╦════╗
-    ║ DL ║ DL ║ DL ║
+    ║ TR ║ TR ║ TR ║
     ╠════╬════╬════╣
     ║ JW ║ JW ║ JW ║
     ╠════╬════╬════╣
@@ -41,4 +41,4 @@ Craft recipe brown trampoline:
     ╚════╩════╩════╝
 
 
-To craft colored trampolines, replace "default:wood" with "colored_wood:wood_[color]".
+To craft colored trampolines, replace "default:wood" with "coloredwood:wood_[color]".
