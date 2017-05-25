@@ -11,7 +11,7 @@ logMessage = function(message)
 end
 
 
-local trampolinebox = {
+trampoline.box = {
 	type = "fixed",
 	fixed = {
 		{-0.5, -0.2, -0.5,  0.5,    0,  0.5},
@@ -33,8 +33,8 @@ addColoredTrampNode = function(color, bounce)
 	minetest.register_node("trampoline:trampoline_" .. color, {
 		description = color:gsub("^%l", string.upper) .. " Trampoline",
 		drawtype = "nodebox",
-		node_box = trampolinebox,
-		selection_box = trampolinebox,
+		node_box = trampoline.box,
+		selection_box = trampoline.box,
 		paramtype = "light",
 		tiles = {
 			"top.png",
@@ -64,8 +64,8 @@ end
 minetest.register_node("trampoline:trampoline", {
 	description = "Trampoline",
 	drawtype = "nodebox",
-	node_box = trampolinebox,
-	selection_box = trampolinebox,
+	node_box = trampoline.box,
+	selection_box = trampoline.box,
 	paramtype = "light",
 	tiles = {
 		"top.png",
@@ -94,8 +94,8 @@ minetest.register_craft({
 minetest.register_node("trampoline:trampoline_brown", {
 	description = "Brown Trampoline",
 	drawtype = "nodebox",
-	node_box = trampolinebox,
-	selection_box = trampolinebox,
+	node_box = trampoline.box,
+	selection_box = trampoline.box,
 	paramtype = "light",
 	tiles = {
 		"top.png",
