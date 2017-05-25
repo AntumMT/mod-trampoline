@@ -23,6 +23,7 @@ trampoline.box = {
 local scripts = {
 	'functions',
 	'nodes',
+	'crafting',
 }
 
 for I in pairs(scripts) do
@@ -32,30 +33,12 @@ end
 
 minetest.register_alias("trampoline", "trampoline:trampoline")
 
-minetest.register_craft({
-	output = "trampoline:trampoline",
-	recipe = {
-		{"technic:rubber", "technic:rubber", "technic:rubber"},
-		{"default:wood", "default:wood", "default:wood"},
-		{"default:stick", "default:stick", "default:stick"}
-	}
-})
-
 
 -- *** Colored Trampolines ***
 
 -- BROWN TRAMP
 
 minetest.register_alias("brown_trampoline", "trampoline:trampoline_brown")
-
-minetest.register_craft({
-	output = "trampoline:trampoline_brown",
-	recipe = {
-		{"technic:rubber", "technic:rubber", "technic:rubber"},
-		{"default:junglewood", "default:junglewood", "default:junglewood"},
-		{"default:stick", "default:stick", "default:stick"}
-	}
-})
 
 
 -- Register other colored trampolines
