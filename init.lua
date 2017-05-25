@@ -22,26 +22,13 @@ trampoline.box = {
 
 local scripts = {
 	'functions',
+	'nodes',
 }
 
 for I in pairs(scripts) do
 	dofile(trampoline.modpath .. '/' .. scripts[I] .. '.lua')
 end
 
-
-minetest.register_node("trampoline:trampoline", {
-	description = "Trampoline",
-	drawtype = "nodebox",
-	node_box = trampoline.box,
-	selection_box = trampoline.box,
-	paramtype = "light",
-	tiles = {
-		"top.png",
-		"bottom.png",
-		"sides.png^sides_overlay.png"
-	},
-	groups = {dig_immediate=2, bouncy=20+20, fall_damage_add_percent=-70},
-})
 
 minetest.register_alias("trampoline", "trampoline:trampoline")
 
@@ -58,20 +45,6 @@ minetest.register_craft({
 -- *** Colored Trampolines ***
 
 -- BROWN TRAMP
-
-minetest.register_node("trampoline:trampoline_brown", {
-	description = "Brown Trampoline",
-	drawtype = "nodebox",
-	node_box = trampoline.box,
-	selection_box = trampoline.box,
-	paramtype = "light",
-	tiles = {
-		"top.png",
-		"bottom.png",
-		"sides.png^sides_overlay_brown.png"
-	},
-	groups = {dig_immediate=2, bouncy=20+20, fall_damage_add_percent=-70},
-})
 
 minetest.register_alias("brown_trampoline", "trampoline:trampoline_brown")
 
