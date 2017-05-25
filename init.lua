@@ -1,4 +1,6 @@
 
+trampoline = {}
+
 local modname = "trampoline"
 
 minetest.log("action", "[MOD] Loading '" .. modname .. "' ...")
