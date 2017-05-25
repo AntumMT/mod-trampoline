@@ -1,11 +1,11 @@
 
 local modname = "trampoline"
 
-core.log("action", "[MOD] Loading '" .. modname .. "' ...")
+minetest.log("action", "[MOD] Loading '" .. modname .. "' ...")
 
 
 logMessage = function(message)
-	core.log("action", "[" .. modname .. "] " .. message)
+	minetest.log("action", "[" .. modname .. "] " .. message)
 end
 
 
@@ -135,4 +135,4 @@ if minetest.get_modpath("coloredwood") ~= nil then
 end
 
 
-core.log("action", "[MOD] '" .. modname .. "' loaded")
+minetest.log("action", "[MOD] '" .. modname .. "' loaded")
