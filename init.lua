@@ -4,6 +4,11 @@ trampoline.modname = minetest.get_current_modname()
 trampoline.modpath = minetest.get_modpath(trampoline.modname)
 trampoline.bounce = 20
 
+-- Bounce multipliers
+trampoline.multi = 5
+trampoline.multi_brown = 6
+trampoline.multi_colors = 7
+
 
 minetest.log('action', '[MOD] Loading \'' .. trampoline.modname .. '\' ...')
 
