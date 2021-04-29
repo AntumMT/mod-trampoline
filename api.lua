@@ -53,5 +53,8 @@ function trampoline.register_tramp(name, def)
 			bouncy = def.bounce_rate,
 			fall_damage_add_percent = -trampoline.damage_absorb,
 		},
+		sounds = {
+			footstep = "trampoline_boing",
+		},
 	})
 end

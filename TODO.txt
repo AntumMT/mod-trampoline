@@ -1,4 +1,4 @@
 
 TODO:
-- make trampolines bounce higher
-- add sounds
+- makes sounds play only when "bounced"
+- make colorable with homedecor:airbrush

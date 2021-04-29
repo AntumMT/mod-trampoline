@@ -1,0 +1,5 @@
+
+- trampoline_boing:
+  - link: https://freesound.org/people/reelworldstudio/sounds/161122/
+  - license: CC0
+  - author: reelworldstudio
