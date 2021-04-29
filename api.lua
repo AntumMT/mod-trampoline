@@ -2,8 +2,17 @@
 
 
 -- Log messages specific to trampoline mod
-trampoline.log = function(message)
-	minetest.log('action', '[' .. trampoline.modname .. '] ' .. message)
+trampoline.log = function(lvl, msg)
+	if msg == nil then
+		msg = lvl
+		lvl = nil
+	end
+
+	if lvl == nil then
+		core.log(msg)
+	else
+		core.log(lvl, "[" .. trampoline.modname .. "] " .. msg)
+	end
 end
 
 trampoline.bounce = 20
