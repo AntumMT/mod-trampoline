@@ -6,6 +6,12 @@ trampoline.log = function(message)
 	minetest.log('action', '[' .. trampoline.modname .. '] ' .. message)
 end
 
+trampoline.bounce = 20
+-- Bounce multipliers
+trampoline.multi = 5
+trampoline.multi_high = 6
+trampoline.multi_higher = 7
+
 -- trampoline shape
 local box = {
 	type = "fixed",
