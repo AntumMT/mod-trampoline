@@ -11,7 +11,7 @@ core.register_craft({
 	output = "trampoline:regular",
 	recipe = {
 		{"technic:rubber", "technic:rubber", "technic:rubber"},
-		{"default:wood", "default:wood", "default:wood"},
-		{"default:stick", "", "default:stick"}
+		{"group:wood", "group:wood", "group:wood"},
+		{"group:stick", "", "group:stick"},
 	}
 })
