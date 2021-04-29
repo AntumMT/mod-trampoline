@@ -12,7 +12,7 @@ core.register_craft({
 	recipe = {
 		{"technic:rubber", "technic:rubber", "technic:rubber"},
 		{"default:wood", "default:wood", "default:wood"},
-		{"default:stick", "default:stick", "default:stick"}
+		{"default:stick", "", "default:stick"}
 	}
 })
 
@@ -23,6 +23,6 @@ core.register_craft({
 	recipe = {
 		{"technic:rubber", "technic:rubber", "technic:rubber"},
 		{"default:junglewood", "default:junglewood", "default:junglewood"},
-		{"default:stick", "default:stick", "default:stick"}
+		{"default:stick", "", "default:stick"}
 	}
 })
