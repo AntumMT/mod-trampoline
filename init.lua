@@ -40,7 +40,7 @@ trampoline.box = {
 
 
 local scripts = {
-	'functions',
+	'api',
 	'nodes',
 	'crafting',
 	'aliases',
