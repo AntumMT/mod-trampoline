@@ -45,6 +45,14 @@ Craft recipe:
 </details>
 
 
+### Links:
+
+- [Minetest forum](https://forum.minetest.net/viewtopic.php?t=17691)
+- [Git repo](https://github.com/AntumMT/mod-trampoline)
+- [Changelog](CHANGES.txt)
+- [TODO](TODO.txt)
+
+
 [mod.default]: https://github.com/minetest/minetest_game/tree/master/mods/default
 [mod.technic]: https://forum.minetest.net/viewtopic.php?t=2538
 [mod.unifieddyes]: https://forum.minetest.net/viewtopic.php?t=2178
