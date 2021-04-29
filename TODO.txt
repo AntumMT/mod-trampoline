@@ -1,1 +1,4 @@
-Make trampolines bounce higher.
+
+TODO:
+- make trampolines bounce higher
+- add sounds
