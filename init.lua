@@ -4,7 +4,21 @@ trampoline.modname = minetest.get_current_modname()
 trampoline.modpath = minetest.get_modpath(trampoline.modname)
 
 
-minetest.log('action', '[MOD] Loading \'' .. trampoline.modname .. '\' ...')
+-- Log messages specific to trampoline mod
+trampoline.log = function(lvl, msg)
+	if msg == nil then
+		msg = lvl
+		lvl = nil
+	end
+
+	if lvl == nil then
+		core.log(msg)
+	else
+		core.log(lvl, "[" .. trampoline.modname .. "] " .. msg)
+	end
+end
+
+trampoline.log("action", "loading ...")
 
 
 local scripts = {
@@ -15,13 +29,13 @@ local scripts = {
 }
 
 for I in pairs(scripts) do
-	dofile(trampoline.modpath .. '/' .. scripts[I] .. '.lua')
+	dofile(trampoline.modpath .. "/" .. scripts[I] .. ".lua")
 end
 
 -- Register other colored trampolines
-if minetest.global_exists('coloredwood') then
-	dofile(trampoline.modpath .. '/colored.lua')
+if minetest.global_exists("coloredwood") then
+	dofile(trampoline.modpath .. "/colored.lua")
 end
 
 
-minetest.log('action', '[MOD] \'' .. trampoline.modname .. '\' loaded')
+trampoline.log("action", "loaded")
