@@ -12,7 +12,6 @@ local scripts = {
 	"api",
 	"nodes",
 	"crafting",
-	"aliases",
 }
 
 for I in pairs(scripts) do
