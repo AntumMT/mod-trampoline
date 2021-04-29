@@ -10,40 +10,41 @@ Forked from [Jeija's jumping mod](https://forum.minetest.net/viewtopic.php?t=295
 - Sounds: [CC0](docs/sources_sounds.txt)
 
 
-### Depends on:
-* default
-* technic
-* coloredwood?
-* craft_guide?
+### Dependencies:
+
+- Required:
+  - none
+- Optional:
+  - [default][mod.default] (required for craft recipe)
+  - [technic][mod.technic] (required for craft recipe)
+  - [unifieddyes][mod.unifieddyes] (required for coloring)
 
 
 ### Crafting:
-* TR = technic:rubber
-* DW = default:wood
-* JW = default:junglewood
-* DS = default:stick
+
+<details>
+<summary>Spoiler:</summary>
+
+Key:
+- TR = technic:rubber
+- GW = group:wood
+- GS = group:stick
 
 
 Craft recipe:
-
+```
     ╔════╦════╦════╗
     ║ TR ║ TR ║ TR ║
     ╠════╬════╬════╣
-    ║ DW ║ DW ║ DW ║
+    ║ GW ║ GW ║ GW ║
     ╠════╬════╬════╣
-    ║ DS ║ DS ║ DS ║
+    ║ GS ║    ║ GS ║
     ╚════╩════╩════╝
+```
+
+</details>
 
 
-Craft recipe brown trampoline:
-
-    ╔════╦════╦════╗
-    ║ TR ║ TR ║ TR ║
-    ╠════╬════╬════╣
-    ║ JW ║ JW ║ JW ║
-    ╠════╬════╬════╣
-    ║ DS ║ DS ║ DS ║
-    ╚════╩════╩════╝
-
-
-To craft colored trampolines, replace "default:wood" with "coloredwood:wood_[color]".
+[mod.default]: https://github.com/minetest/minetest_game/tree/master/mods/default
+[mod.technic]: https://forum.minetest.net/viewtopic.php?t=2538
+[mod.unifieddyes]: https://forum.minetest.net/viewtopic.php?t=2178
