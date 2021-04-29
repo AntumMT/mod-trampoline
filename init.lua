@@ -32,10 +32,5 @@ for I in pairs(scripts) do
 	dofile(trampoline.modpath .. "/" .. scripts[I] .. ".lua")
 end
 
--- Register other colored trampolines
-if minetest.global_exists("coloredwood") then
-	dofile(trampoline.modpath .. "/colored.lua")
-end
-
 
 trampoline.log("action", "loaded")
